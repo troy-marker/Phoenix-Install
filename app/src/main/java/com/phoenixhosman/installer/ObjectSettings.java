@@ -1,8 +1,15 @@
+/*
+    The Phoenix Hospitality Management System
+    Settings Installer App
+    Setting Object Definition Code File
+    Copyright (c) 2020 By Troy Marker Enterprises
+    All Rights Under Copyright Reserved
+
+    The code in this file was created for use with the Phoenix Hospitality Management System (PHMS).
+    Use of this code outside the PHMS is strictly prohibited.
+ */
 package com.phoenixhosman.installer;
 
-/**
- * The type Object settings.
- */
 class ObjectSettings {
     private String mCoName;
     private String mCoAddress;
@@ -11,10 +18,10 @@ class ObjectSettings {
     private String mCoZip;
     private String mApiUrl;
     private String mLockPass;
+    private String mApiKey;
 
     /**
      * Sets company name.
-     *
      * @param mCoName the company name
      */
     void setCoName (String mCoName) {
@@ -23,7 +30,6 @@ class ObjectSettings {
 
     /**
      * Sets company address.
-     *
      * @param mCoAddress the company address
      */
     void setCoAddress (String mCoAddress) {
@@ -32,7 +38,6 @@ class ObjectSettings {
 
     /**
      * Sets company city.
-     *
      * @param mCoCity the company city
      */
     void setCoCity (String mCoCity) {
@@ -41,7 +46,6 @@ class ObjectSettings {
 
     /**
      * Sets company state.
-     *
      * @param mCoState the company state
      */
     void setCoState (String mCoState) {
@@ -50,7 +54,6 @@ class ObjectSettings {
 
     /**
      * Sets company zip.
-     *
      * @param mCoZip the company zip
      */
     void setCoZip (String mCoZip) {
@@ -59,7 +62,6 @@ class ObjectSettings {
 
     /**
      * Sets api url.
-     *
      * @param mApiUrl the API URL
      */
     void setApiUrl (String mApiUrl) {
@@ -68,14 +70,20 @@ class ObjectSettings {
 
     /**
      * Sets Lock Password
-     *
      * @param mLockPass The lock Passeword
      */
     void setLockPass (String mLockPass) { this.mLockPass = mLockPass; }
 
     /**
+     * Sets the Api Key
+     * @param mApiKey the api key
+     */
+    void setApiKey (String mApiKey) {
+        this.mApiKey = mApiKey;
+    }
+
+    /**
      * Gets company name.
-     *
      * @return the company name
      */
     String getCoName () {
@@ -84,7 +92,6 @@ class ObjectSettings {
 
     /**
      * Gets company address.
-     *
      * @return the company address
      */
     String getCoAddress () {
@@ -93,7 +100,6 @@ class ObjectSettings {
 
     /**
      * Gets company city.
-     *
      * @return the company city
      */
     String getCoCity () {
@@ -102,7 +108,6 @@ class ObjectSettings {
 
     /**
      * Gets company state.
-     *
      * @return the company state
      */
     String getCoState () {
@@ -111,7 +116,6 @@ class ObjectSettings {
 
     /**
      * Gets company zip.
-     *
      * @return the company zip
      */
     String getCoZip () {
@@ -120,7 +124,6 @@ class ObjectSettings {
 
     /**
      * Gets api url.
-     *
      * @return the api url
      */
     String getApiUrl () {
@@ -129,8 +132,15 @@ class ObjectSettings {
 
     /**
      * Gets the Lock Password
-     *
      * @return the lock password
      */
     String getLockPass () { return mLockPass; }
+
+    /**
+     * Gets the Api Key
+     * @return the API Key
+     */
+    String getApiKey() {
+        return mApiKey;
+    }
 }

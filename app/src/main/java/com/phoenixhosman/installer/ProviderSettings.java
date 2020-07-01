@@ -1,3 +1,13 @@
+/*
+    The Phoenix Hospitality Management System
+    Settings Installer App
+    Settings Content Provider Code File
+    Copyright (c) 2020 By Troy Marker Enterprises
+    All Rights Under Copyright Reserved
+
+    The code in this file was created for use with the Phoenix Hospitality Management System (PHMS).
+    Use of this code outside the PHMS is strictly prohibited.
+ */
 package com.phoenixhosman.installer;
 
 import android.content.ContentProvider;
@@ -17,7 +27,7 @@ import java.util.HashMap;
 import java.util.Objects;
 
 /**
- * The type Provider settings.
+ * The Settings Content Provider.
  */
 public class ProviderSettings extends ContentProvider {
 
@@ -32,6 +42,7 @@ public class ProviderSettings extends ContentProvider {
     static final String cozip = "cozip";
     static final String apiurl = "apiurl";
     static final String lockpass = "lockpass";
+    static final String apikey = "apikey";
     private static final int uriCode = 1;
     private static final UriMatcher uriMatcher;
     private static final HashMap<String, String> values = null;
@@ -113,7 +124,8 @@ public class ProviderSettings extends ContentProvider {
             + " costate TEXT NOT NULL,"
             + " cozip TEXT NOT NULL,"
             + " apiurl TEXT NOT NULL,"
-            + " lockpass TEXT NOT NULL);";
+            + " lockpass TEXT NOT NULL,"
+            + " apikey TEXT NOT NULL)";
 
     private static class DatabaseHelper extends SQLiteOpenHelper {
         DatabaseHelper(Context context) {

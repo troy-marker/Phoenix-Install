@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    The Phoenix Hospitality Management System
+    Settings Installer App
+    Main Activity Layout Definition File
+    Copyright (c) 2020 By Troy Marker Enterprises
+    All Rights Under Copyright Reserved
+
+    The code in this file was created for use with the Phoenix Hospitality Management System (PHMS).
+    Use of this code outside the PHMS is strictly prohibited.
+-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -26,200 +36,212 @@
                 android:layout_gravity="center"
                 android:baselineAligned="false"
                 android:orientation="horizontal">
-            <LinearLayout
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <EditText
-                    android:id="@+id/etCoName"
+                <LinearLayout
                     android:layout_width="250dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="0dp"
-                    android:background="@color/Phoenix_Lt_Green"
-                    android:importantForAutofill="no"
-                    android:inputType="text"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textSize="36sp"
-                    tools:ignore="LabelFor" />
-                <TextView
-                    android:id="@+id/tvCoName"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <EditText
+                        android:id="@+id/etCoName"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/Phoenix_Lt_Green"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textSize="36sp"
+                        tools:ignore="LabelFor" />
+                    <TextView
+                        android:id="@+id/tvCoName"
+                        android:layout_width="250dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/x_border_green_grey"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="0dp"
+                        android:text="@string/company_name" />
+                    <EditText
+                        android:id="@+id/etCompanyAddress"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/Phoenix_Lt_Green"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textSize="36sp"
+                        tools:ignore="LabelFor" />
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/x_border_green_grey"
+                        android:gravity="center_horizontal"
+                        android:maxHeight="5dp"
+                        android:text="@string/company_address" />
+                    <EditText
+                        android:id="@+id/etCompanyCity"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/Phoenix_Lt_Green"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textSize="36sp"
+                        tools:ignore="LabelFor" />
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/x_border_green_grey"
+                        android:gravity="center_horizontal"
+                        android:text="@string/company_city" />
+                    <EditText
+                        android:id="@+id/etCompanyState"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/Phoenix_Lt_Green"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textSize="36sp"
+                        tools:ignore="LabelFor" />
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/x_border_green_grey"
+                        android:gravity="center_horizontal"
+                        android:text="@string/company_state" />
+                    <EditText
+                        android:id="@+id/etCompanyZip"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/Phoenix_Lt_Green"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textSize="36sp"
+                        tools:ignore="LabelFor" />
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/x_border_green_grey"
+                        android:gravity="center_horizontal"
+                        android:text="@string/company_zip" />
+                </LinearLayout>
+                <LinearLayout
                     android:layout_width="250dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="0dp"
-                    android:background="@drawable/x_border_green_grey"
-                    android:gravity="center_horizontal"
-                    android:paddingTop="0dp"
-                    android:text="@string/company_name" />
-                <EditText
-                    android:id="@+id/etCompanyAddress"
-                    android:layout_width="250dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:background="@color/Phoenix_Lt_Green"
-                    android:importantForAutofill="no"
-                    android:inputType="text"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textSize="36sp"
-                    tools:ignore="LabelFor" />
-                <TextView
-                    android:layout_width="250dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="0dp"
-                    android:background="@drawable/x_border_green_grey"
-                    android:gravity="center_horizontal"
-                    android:maxHeight="5dp"
-                    android:text="@string/company_address" />
-                <EditText
-                    android:id="@+id/etCompanyCity"
-                    android:layout_width="250dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:background="@color/Phoenix_Lt_Green"
-                    android:importantForAutofill="no"
-                    android:inputType="text"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textSize="36sp"
-                    tools:ignore="LabelFor" />
-                <TextView
-                    android:layout_width="250dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="0dp"
-                    android:background="@drawable/x_border_green_grey"
-                    android:gravity="center_horizontal"
-                    android:text="@string/company_city" />
-                <EditText
-                    android:id="@+id/etCompanyState"
-                    android:layout_width="250dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:background="@color/Phoenix_Lt_Green"
-                    android:importantForAutofill="no"
-                    android:inputType="text"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textSize="36sp"
-                    tools:ignore="LabelFor" />
-                <TextView
-                    android:layout_width="250dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="0dp"
-                    android:background="@drawable/x_border_green_grey"
-                    android:gravity="center_horizontal"
-                    android:text="@string/company_state" />
-                <EditText
-                    android:id="@+id/etCompanyZip"
-                    android:layout_width="250dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:background="@color/Phoenix_Lt_Green"
-                    android:importantForAutofill="no"
-                    android:inputType="number"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textSize="36sp"
-                    tools:ignore="LabelFor" />
-                <TextView
-                    android:layout_width="250dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="0dp"
-                    android:background="@drawable/x_border_green_grey"
-                    android:gravity="center_horizontal"
-                    android:text="@string/company_zip" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+                    <EditText
+                        android:id="@+id/etAPIUrl"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@color/Phoenix_Lt_Yellow"
+                        android:importantForAutofill="no"
+                        android:inputType="textUri"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textSize="36sp"
+                        tools:ignore="LabelFor" />
+                    <TextView
+                        android:id="@+id/tvAPIUrl"
+                        android:layout_width="250dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/x_border_yellow_grey"
+                        android:fontFamily="@font/okuda"
+                        android:gravity="center_horizontal"
+                        android:text="@string/api_url" />
+                    <EditText
+                        android:id="@+id/etLockPass"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/Phoenix_Lt_Yellow"
+                        android:importantForAutofill="no"
+                        android:inputType="textPassword"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textSize="36sp"
+                        tools:ignore="LabelFor" />
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/x_border_yellow_grey"
+                        android:fontFamily="@font/okuda"
+                        android:gravity="center_horizontal"
+                        android:text="@string/lock_pass" />
+                    <EditText
+                        android:id="@+id/etApiKey"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/Phoenix_Lt_Yellow"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textSize="36sp"
+                        tools:ignore="LabelFor" />
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/x_border_yellow_grey"
+                        android:fontFamily="@font/okuda"
+                        android:gravity="center_horizontal"
+                        android:text="@string/api_key" />
+                    <Button
+                        android:id="@+id/btnInstall"
+                        android:layout_width="250dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/Phoenix_Dk_Red"
+                        android:gravity="center"
+                        android:text="@string/install_settings"
+                        android:textSize="36sp" />
+                    <Button
+                        android:id="@+id/btnExit"
+                        android:layout_width="250dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/Phoenix_Dk_Blue"
+                        android:gravity="center"
+                        android:text="@string/exit_app"
+                        android:textSize="36sp" />
+                </LinearLayout>
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:orientation="vertical">
-                <EditText
-                    android:id="@+id/etAPIUrl"
-                    android:layout_width="250dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:background="@color/Phoenix_Lt_Yellow"
-                    android:importantForAutofill="no"
-                    android:inputType="textUri"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textSize="36sp"
-                    tools:ignore="LabelFor" />
-                <TextView
-                    android:id="@+id/tvAPIUrl"
-                    android:layout_width="250dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="0dp"
-                    android:background="@drawable/x_border_yellow_grey"
-                    android:fontFamily="@font/okuda"
-                    android:gravity="center_horizontal"
-                    android:text="@string/api_url" />
-                <EditText
-                    android:id="@+id/etLockPass"
-                    android:layout_width="250dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:background="@color/Phoenix_Lt_Yellow"
-                    android:importantForAutofill="no"
-                    android:inputType="textPassword"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textSize="36sp"
-                    tools:ignore="LabelFor" />
-                <TextView
-                    android:layout_width="250dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="0dp"
-                    android:background="@drawable/x_border_yellow_grey"
-                    android:fontFamily="@font/okuda"
-                    android:gravity="center_horizontal"
-                    android:text="@string/lock_pass" />
-                <Button
-                    android:id="@+id/btnInstall"
-                    android:layout_width="250dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:background="@color/Phoenix_Dk_Red"
-                    android:gravity="center"
-                    android:text="@string/install_settings"
-                    android:textSize="36sp" />
-                <Button
-                    android:id="@+id/btnLoad"
-                    android:layout_width="250dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:background="@color/Phoenix_Dk_Blue"
-                    android:gravity="center"
-                    android:text="@string/load_settings"
-                    android:textSize="36sp" />
-                <Button
-                    android:id="@+id/btnExit"
-                    android:layout_width="250dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:background="@color/Phoenix_Dk_Blue"
-                    android:gravity="center"
-                    android:text="@string/exit_app"
-                    android:textSize="36sp" />
-            </LinearLayout>
-        </LinearLayout>
         </ScrollView>
     </HorizontalScrollView>
 </LinearLayout>

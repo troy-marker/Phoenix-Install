@@ -1,3 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    The Phoenix Hospitality Management System
+    Settings Installer App
+    App Strings Code File
+    Copyright (c) 2020 By Troy Marker Enterprises
+    All Rights Under Copyright Reserved
+
+    The code in this file was created for use with the Phoenix Hospitality Management System (PHMS).
+    Use of this code outside the PHMS is strictly prohibited.
+-->
 <resources>
     <string name="app_name">Phoenix Install</string>
     <string name="app_long_name">PHOENIX HOSPITALITY MANAGEMENT SYSTEM INSTALL APP</string>
@@ -13,4 +24,5 @@
     <string name="load_settings">LOAD SETTINGS</string>.
     <string name="lock_pass">LOCK PASSWORD</string>
     <string name="exit_app">EXIT APP</string>
+    <string name="api_key">API Key</string>
 </resources>
