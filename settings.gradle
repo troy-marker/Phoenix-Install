@@ -1,2 +1,3 @@
+include ':SettingsConPro'
 include ':app'
 rootProject.name='Install'

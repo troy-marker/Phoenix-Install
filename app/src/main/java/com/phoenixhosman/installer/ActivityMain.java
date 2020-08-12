@@ -121,7 +121,7 @@ public class ActivityMain extends AppCompatActivity implements View.OnClickListe
             settings.getApiUrl().isEmpty() ||
             settings.getLockPass().isEmpty() ||
             settings.getApiKey().isEmpty()) {
-            Error ("\nAll settings are required,");
+            Error ("All settings are required,");
             retval = false;
         }
         return retval;

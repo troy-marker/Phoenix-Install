@@ -1,12 +1,14 @@
 <component name="ProjectDictionaryState">
   <dictionary name="tlmar">
     <words>
+      <w>apikey</w>
       <w>apiurl</w>
       <w>coaddress</w>
       <w>cocity</w>
       <w>coname</w>
       <w>costate</w>
       <w>cozip</w>
+      <w>lockpass</w>
       <w>okuda</w>
       <w>phoenixhosman</w>
       <w>phoenixhospman</w>

@@ -11,35 +11,14 @@
 -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="55dp"
-    android:background="@color/Phoenix_Black"
-    style="?android:attr/buttonBarStyle"
-    tools:ignore="Overdraw">
+    style="@style/Phoenix_Dialog">
     <Button
         android:id="@+id/btnErrorMessage"
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="3"
-        android:background="@drawable/x_border_grey"
-        android:fontFamily="@font/okuda"
-        android:text="@string/error"
-        android:textColor="@color/Phoenix_Black"
-        android:textSize="24sp" />
+        style="@style/Phoenix_Dialog_Message.Error"
+        android:text="@string/error"/>
+
     <Button
         android:id="@+id/btnExitButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_weight="1"
-        android:background="@drawable/x_red_button"
-        android:fontFamily="@font/okuda"
-        android:paddingTop="60dp"
-        android:text="@string/exit_2"
-        android:textSize="24sp"
-        android:textColor="@color/Phoenix_Black"
-        style="?android:attr/buttonBarButtonStyle" />
+        style="@style/Phoenix_Dialog_Button.Error"
+        android:text="@string/exit_2" />
 </LinearLayout>
